@@ -32,7 +32,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
@@ -53,3 +53,17 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
+
+
+
+MY NOTES
+
+- layout takes a long time to render 171.1 ms
+- media queries (landscape, print, etc) split css into multiple files sometimes so
+that not all css needs to be loaded in all cases, print already done https://developers.google.com/web/fundamentals/design-and-ui/responsive/
+- async attribute to script tag, async means that the script won't block the critical rendering path, javascript
+- minimize bytes, reduce critical resource, shorten CRP length
+https://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/
+- execute javascript as early as possible in every frame
+- requestAnimationFrame
+- https://varvy.com/pagespeed https://varvy.com/performance
