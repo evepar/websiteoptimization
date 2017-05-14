@@ -60,10 +60,16 @@ MY NOTES
 
 - layout takes a long time to render 171.1 ms
 - media queries (landscape, print, etc) split css into multiple files sometimes so
-that not all css needs to be loaded in all cases, print already done https://developers.google.com/web/fundamentals/design-and-ui/responsive/
+that not all css needs to be loaded in all cases, print already done
+- tailor bootstrap to fit this site  https://developers.google.com/web/fundamentals/design-and-ui/responsive/
 - async attribute to script tag, async means that the script won't block the critical rendering path, javascript
 - minimize bytes, reduce critical resource, shorten CRP length
 https://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/
 - execute javascript as early as possible in every frame
 - requestAnimationFrame
 - https://varvy.com/pagespeed https://varvy.com/performance
+- Karol's links: https://github.com/udacity/frontend-nanodegree-mobile-portfolio#part-1-optimize-pagespeed-insights-score-for-indexhtml
+https://github.com/udacity/frontend-nanodegree-mobile-portfolio#part-2-optimize-frames-per-second-in-pizzahtml
+https://developers.google.com/speed/pagespeed/insights/
+https://discussions.udacity.com/t/website-optimisation-project-where-on-earth-to-start/194291/4
+https://www.designbrooklyn.com/resources/blog/view/Optimizing-Images-for-the-Web-using-GIMP-2013-11-06/
