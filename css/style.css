@@ -8,7 +8,10 @@ html {
   -webkit-text-size-adjust: none;
 }
 body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
-body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
+body, button, input, select, textarea { font-family: 'Khula', sans-serif; color: #333; }
+.wf-loading {font-family: "Khula", sans-serif;}
+.wf-inactive {font-family: "Khula", sans-serif;}
+.wf_active {font-family: "Khula", sans-serif;}
 
 a { color: #0b5e56; }
 a:visited { color: #1aa3a3; }

@@ -33,7 +33,7 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
-  will-change: transform; // not sure which should will-change
+  will-change: ; // not sure which should will-change
 }
 
 .randomPizzaContainer {
