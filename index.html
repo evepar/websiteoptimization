@@ -13,15 +13,17 @@
 
     <script type="text/javascript">
       WebFontConfig = {
-        google: ["Khula"]
+        google: {
+          ["PT Sans Narrow"]
         }
       };
       (function(){
         var wf = document.createElement("script");
-        wf.src = "https://fonts.googleapis.com/css?family=Khula";
+        wf.src = ("https:" == document.location.protocol ? "https" : "http") +
+            "://fonts.googleapis.com/css?family=PT+Sans+Narrow";
         wf.type = "text/javascript";
         wf.async = "true";
-        var s = document.getElementByTagName("script")[0];
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(wf, s);
       }) (document);
     </script>

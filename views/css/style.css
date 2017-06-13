@@ -8,9 +8,21 @@
 }
 
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
   background: black;
 }
+
+body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
+body, button, input, select, textarea { font-family: 'Oxygen', sans-serif; }
+.wf-loading p { font-family: 'Oxygen', sans-serif; }
+.wf-inactive p { font-family: 'Oxygen', sans-serif; }
+.wf-active p { font-family: 'Oxygen', sans-serif; width:400px; margin-left:20px; }
+.wf-loading h1 { font-family: 'Oxygen', sans-serif; font-weight: 400; font-size: 24px; }
+.wf-inactive h1 { font-family: 'Oxygen', sans-serif; font-weight: 400; font-size: 24px; }
+.wf-active h1 { font-family: 'Oxygen', sans-serif; font-weight: 400; font-size: 24px; }
+.wf-loading h2 { font-family: 'Oxygen', sans-serif; font-weight: 300; font-size: 20px; }
+.wf-inactive h2 { font-family: 'Oxygen', sans-serif; font-weight: 300; font-size: 20px; }
+.wf-active h2 { font-family: 'Oxygen', sans-serif; font-weight: 300; font-size: 20px; }
+
 
 input {
   background: grey;

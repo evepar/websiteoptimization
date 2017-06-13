@@ -7,11 +7,18 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
 }
+
 body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
-body, button, input, select, textarea { font-family: 'Khula', sans-serif; color: #333; }
-.wf-loading {font-family: "Khula", sans-serif;}
-.wf-inactive {font-family: "Khula", sans-serif;}
-.wf_active {font-family: "Khula", sans-serif;}
+body, button, input, select, textarea { font-family: 'PT Sans Narrow', sans-serif; }
+.wf-loading p { font-family: 'PT Sans Narrow', sans-serif; }
+.wf-inactive p { font-family: 'PT Sans Narrow', sans-serif; }
+.wf-active p { font-family: 'PT Sans Narrow', sans-serif; width:400px; margin-left:20px; }
+.wf-loading h1 { font-family: 'PT Sans Narrow', sans-serif; font-weight: 400; font-size: 24px; }
+.wf-inactive h1 { font-family: 'PT Sans Narrow', sans-serif; font-weight: 400; font-size: 24px; }
+.wf-active h1 { font-family: 'PT Sans Narrow', sans-serif; font-weight: 400; font-size: 24px; }
+.wf-loading h2 { font-family: 'PT Sans Narrow', sans-serif; font-weight: 300; font-size: 20px; }
+.wf-inactive h2 { font-family: 'PT Sans Narrow', sans-serif; font-weight: 300; font-size: 20px; }
+.wf-active h2 { font-family: 'PT Sans Narrow', sans-serif; font-weight: 300; font-size: 20px; }
 
 a { color: #0b5e56; }
 a:visited { color: #1aa3a3; }
