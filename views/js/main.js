@@ -333,22 +333,29 @@ var ingredientItemizer = function(string) {
 };
 
 // Returns a string with random pizza ingredients nested inside <li> tags
+  // var i;
+  // var l = arr.length;
+  // for (i = 0; i < l; i++) {
+  // from https://www.w3schools.com/js/js_performance.asp
 var makeRandomPizza = function() {
   var pizza = "";
 
   var numberOfMeats = Math.floor((Math.random() * 4));
+  var l = numberOfMeats;
   var numberOfNonMeats = Math.floor((Math.random() * 3));
+  var m = numberOfNonMeats;
   var numberOfCheeses = Math.floor((Math.random() * 2));
+  var n = numberOfCheeses;
 
-  for (var i = 0; i < numberOfMeats; i++) {
+  for (var i = 0; i < l; i++) {
     pizza = pizza + ingredientItemizer(selectRandomMeat());
   }
 
-  for (var j = 0; j < numberOfNonMeats; j++) {
+  for (var j = 0; j < m; j++) {
     pizza = pizza + ingredientItemizer(selectRandomNonMeat());
   }
 
-  for (var k = 0; k < numberOfCheeses; k++) {
+  for (var k = 0; k < n; k++) {
     pizza = pizza + ingredientItemizer(selectRandomCheese());
   }
 
@@ -524,7 +531,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 50; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
@@ -535,4 +542,23 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
   updatePositions();
+});
+
+//from https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+var last_known_scroll_position = 0;
+var ticking = false;
+
+function doSomething(scroll_pos) {
+  // do something with the scroll position
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      ticking = false;
+    });
+  }
+  ticking = true;
 });
