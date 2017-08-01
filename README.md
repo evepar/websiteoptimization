@@ -73,3 +73,14 @@ https://github.com/udacity/frontend-nanodegree-mobile-portfolio#part-2-optimize-
 https://developers.google.com/speed/pagespeed/insights/
 https://discussions.udacity.com/t/website-optimisation-project-where-on-earth-to-start/194291/4
 https://www.designbrooklyn.com/resources/blog/view/Optimizing-Images-for-the-Web-using-GIMP-2013-11-06/
+
+
+My Notes vol 2: What I did
+- index.html
+  + imported fonts
+  + inlined CSS, except for print stylesheet
+  + script async so that that JavaScript wouldn't render block
+  + resized images
+- pizza.html
+  + less pizzas when scrolling
+  + smaller image
