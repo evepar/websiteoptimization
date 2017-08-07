@@ -554,6 +554,7 @@ var ticking = false;
 
 function doSomething(scroll_pos) {
   // do something with the scroll position
+  updatePositions();
 }
 
 window.addEventListener('scroll', function(e) {
