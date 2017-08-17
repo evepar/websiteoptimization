@@ -347,15 +347,15 @@ var makeRandomPizza = function() {
   var numberOfCheeses = Math.floor((Math.random() * 2));
   var n = numberOfCheeses;
 
-  for (var i = 0; i < l; i++) {
+  for (var i = 0; i < numberOfMeats; i++) {
     pizza = pizza + ingredientItemizer(selectRandomMeat());
   }
 
-  for (var j = 0; j < m; j++) {
+  for (var j = 0; j < numberOfNonMeats; j++) {
     pizza = pizza + ingredientItemizer(selectRandomNonMeat());
   }
 
-  for (var k = 0; k < n; k++) {
+  for (var k = 0; k < numberOfCheeses; k++) {
     pizza = pizza + ingredientItemizer(selectRandomCheese());
   }
 
@@ -510,15 +510,15 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.getElementsByClassName('.mover');
-  for (var j = 0; j < items.length; j++) {
+  for (var i = 0; i < items.length; i++) {
       var cachedLength = items.length;
-      for (var j = 0; j < cachedLength; j++);
-    var phase = Math.sin((document.body.scrollTop / 1250) + (j % 5));
+      for (var i = 0; i < cachedLength; i++);
+    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
 
     //console.log from office hour video to see all the numbers
     //console.log(phase, document.body.scrollTop / 1250)
 
-    items[j].style.left = items[j].basicLeft + 100 * phase + 'px';
+    items[j].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.

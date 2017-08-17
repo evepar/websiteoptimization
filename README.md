@@ -84,3 +84,4 @@ My Notes vol 2: What I did
 - pizza.html
   + less pizzas when scrolling
   + smaller image
+  + remove node_modules ??? (not yet done)
